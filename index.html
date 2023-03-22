@@ -5,8 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body id="body">
+    <header class="header" id="header">
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header> 
+     
+    <div class="main" id="main">
+        <div class="scoreboard" id="scoreboard">
+            <div class="score-information" id="score-information">
+
+            </div>
+
+            <div class="score-message" id="score-message">
+
+            </div>
+
+            <div class="score-container" id="score-container">
+                <div class="score-box1" id="score-box1">
+                    <div class="choice1" id="choice1">
+
+                    </div>
+                    <div class="score1" id="score1">
+                        
+                    </div>
+                </div>
+
+                <div class="score-box2" id="score-box1">
+                    <div class="choice2" id="choice2">
+
+                    </div>
+                    <div class="score2" id="score2">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="buttons" id="buttons">
+            <button class="buttonRock" id="buttonRock">
+                ROCK
+            </button>
+            <button class="buttonPaper" id="buttonPaper">
+                PAPER
+            </button>
+            <button class="buttonScissors" id="buttonScissors">
+                SCISSORS
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="gameEndModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <footer class="footer" id="footer">aponmywrist © 2023</footer>
+
     <script src="app.js"></script>
 </body>
 </html>

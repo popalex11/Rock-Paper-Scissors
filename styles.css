@@ -1,0 +1,143 @@
+
+html {
+    height: 100%;
+  }
+body {
+    margin: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(30, 57, 88);
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: rgb(35, 26, 75);
+    background-size: contain;
+    color: rgb(153, 143, 10);
+}
+
+.main,
+.buttons,
+.modal,
+.footer,
+.overlay {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: rgb(30, 57, 88);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  .modal-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .btn-restart {
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+
+.score-information {
+    font-size: 40px;
+}
+
+.score-message {
+    font-size: 30px;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.score-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.score-box1,
+.score-box2 {
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    gap:20px;
+}
+
+.buttons {
+    gap: 10px;
+}
+
+.buttonRock,
+.buttonPaper,
+.buttonScissors {
+    font-size: 40px;
+    color: rgb(153, 143, 10);
+    background-color: rgb(16, 38, 63);
+}
+
+#restartBtn {
+    font-size: 40px;
+}
