@@ -127,7 +127,8 @@ body {
 }
 
 .buttons {
-    gap: 10px;
+    gap: 20px;
+    display: flex;
 }
 
 .buttonRock,
@@ -140,4 +141,17 @@ body {
 
 #restartBtn {
     font-size: 40px;
+}
+
+.buttonRock:hover,
+.buttonPaper:hover,
+.buttonScissors:hover {
+    background-color: rgb(13, 26, 41);
+    color: rgb(224, 212, 35);
+    font-size: 37px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
